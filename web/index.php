@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: juan
- * Date: 2/19/14
- * Time: 10:21 AM
- */
 
 require_once __DIR__.'/../vendor/autoload.php';
 use SDPHP\Lifeline\MyLifeline;
