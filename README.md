@@ -145,10 +145,7 @@ echo $lifeline->getLifeline($DECADES);
 
 |    Name     |  Description    |     Data       |
 |:----------- |:--------------- |:-------------- |
-| `lifeline.before`   |Before the life line is started. Ideal to include CSS files, titles or initialize tables or lists|  - Empty event. Data can be added in the `$event['before']`  index. But any non-numeric index will do as the event array will be merged at the end of the program. |
-| `lifeline.decade.X` |  Event dispatched for every decade. The Decade number is X. Event will be dispatched as long as `X < $DECADES` where `$DECADES` is the number passed to the `MyLifeline::getLifeline` method. Decade is 0 indexed. | - The `before` value.
- - Event will contain the index `current_decade` which is the zero indexed decade. 
- - A numeric index for the current decade `X` will contain the default decade value: "'My Life from year ' . $start . ' to ' . $end . ': '" you can append to this value or overwrite it. 
+| `lifeline.before`   |Before the life line is started. Ideal to include CSS files, titles or initialize tables or lists|  Empty event. Data can be added in the `$event['before']`  index. But any non-numeric index will do as the event array will be merged at the end of the program. |
+| `lifeline.decade.X` |  Event dispatched for every decade. The Decade number is X. Event will be dispatched as long as `X < $DECADES` where `$DECADES` is the number passed to the `MyLifeline::getLifeline` method. Decade is 0 indexed. | - The `before` value. Event will contain the index `current_decade` which is the zero indexed decade. A numeric index for the current decade `X` will contain the default decade value: "'My Life from year ' . $start . ' to ' . $end . ': '" you can append to this value or overwrite it. 
  All the other decades will be available. |
-| `lifeline.after`   |After the lifeline is done. Ideal to include JS files, and close any opened table or list tags.| - The `before` value.
-- Every dacade entry|
+| `lifeline.after`   |After the lifeline is done. Ideal to include JS files, and close any opened table or list tags.| The `before` value. Every dacade entry|
