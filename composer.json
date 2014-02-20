@@ -1,0 +1,30 @@
+{
+    "name": "sdphp/lifeline",
+    "homepage": "http://sdphp.org",
+    "description":"Exercise to use the event dispatcher",
+    "keywords":["lifeline","exercise", "event", "dispatcher"],
+    "type":"library",
+    "license":"MIT",
+    "authors":[
+        {
+            "name":"Juan Manuel Torres",
+            "homepage":"http://onema.io"
+        }
+    ],
+    "require": {
+        "symfony/event-dispatcher": "~2.1"
+    },
+    "suggest": {
+        "ext-apc": "Allows service description opcode caching, request and response caching, and credentials caching"
+    },
+    "require-dev": {
+        "monolog/monolog": "1.5.*",
+        "phpunit/phpunit": "3.7.*",
+        "symfony/class-loader": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    }
+}
