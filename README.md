@@ -132,11 +132,11 @@ $lifeline->addSubscriber($lifelineSubscriber);
 
 // Adding a listener example
 $listener = new SampleLifeLineListener();
-$lifeline->addListener('lifeline.before', array($listener, 'onBefore'));
-$lifeline->addListener('lifeline.decade.0', array($listener, 'onDecade0'));
-$lifeline->addListener('lifeline.decade.1', array($listener, 'onDecade1'));
-$lifeline->addListener('lifeline.decade.2', array($listener, 'onDecade2'));
-$lifeline->addListener('lifeline.after', array($listener, 'onAfter'));
+$lifeline->addListener('lifeline.before', array($listener, 'onBefore'), 0);
+$lifeline->addListener('lifeline.decade.0', array($listener, 'onDecade0'), 0);
+$lifeline->addListener('lifeline.decade.1', array($listener, 'onDecade1'), 0);
+$lifeline->addListener('lifeline.decade.2', array($listener, 'onDecade2'), 0);
+$lifeline->addListener('lifeline.after', array($listener, 'onAfter'), 0);
 
 echo $lifeline->getLifeline($DECADES);
 ```
